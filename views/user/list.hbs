@@ -1,0 +1,17 @@
+<table style="width: 100%;">
+  <tr>
+    <th>Username</th>
+    <th>Email</th>
+    <th>İşlem</th>
+  </tr>
+  {{#each users }}
+  <tr>
+    <td>{{username}}</td>
+    <td>{{email}}</td>
+    <td><a href="/users/delete/{{_id}}">Sil</a>
+      <a href="/users/delete?username={{username}}">Sil2</a>
+    </td>
+  </tr>
+  {{/each}}
+
+</table>
