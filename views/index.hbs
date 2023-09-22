@@ -1,2 +1,8 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
+
+{{#if currentUser}}
+{{currentUser.username}}
+
+<a href="/users/logout">Güvenli Çıkış</a>
+{{/if}}
